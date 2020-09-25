@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="style.css"></link>
+  <script src="app.js" charset="utf-8"></script>
+  <!-- <script src="timer.js" charset="utf-8"></script> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@669&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  var outer = document.createElement('div');
+  outer.setAttribute('class', 'container');
+  document.body.appendChild(outer);
+
+  const a = document.getElementsByTagName('div')[0];
+
+  var par = document.createElement('p');
+  par.setAttribute('id', 'countdown');
+  // par.innerHTML = "10:00";
+  a.appendChild(par);
+
+  var inner = document.createElement('div');
+  inner.setAttribute('class', 'grid');
+  a.appendChild(inner);
+
+  var inner2 = document.createElement('div');
+  inner2.innerHTML = "Use Flags ";
+  a.appendChild(inner2);
+
+  var innerdiv = document.createElement('span');
+  innerdiv.setAttribute('id', 'flags-left');
+  const b = document.getElementsByTagName('div')[2];
+  b.appendChild(innerdiv);
+
+  var lastdiv = document.createElement('div');
+  lastdiv.setAttribute('id', 'result');
+  a.appendChild(lastdiv);
+
+</script>
+</body>
+</html>

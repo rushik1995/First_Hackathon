@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Title Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+<style media="screen">
+body{
+  margin: 0;
+  padding: 0;
+}
+div{
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: lightblue;
+}
+A {
+            position: relative;
+            left: 45%;
+            background-color: white;
+            width: 80px;
+            height: 50px;
+            border: 2px solid black;
+            color: green;
+            padding: 5px 10px;
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            margin: 25px 45px;
+            cursor: pointer;
+            text-decoration:none;
+        }
+</style>
+  </head>
+  <body>
+<!-- <button onclick="window.location.href='/page2'">Continue</button> -->
+    <script type="text/javascript">
+var a = document.createElement('div');
+// var c = document.createElement('p');
+var b = document.createElement('A');
+b.setAttribute('href','indexeasy.html');
+b.innerHTML = "Easy Mode";
+document.body.appendChild(a);
+a.appendChild(b);
+
+var c = document.createElement('A');
+c.setAttribute('href','indexmed.html');
+c.innerHTML = "Medium Mode";
+a.appendChild(c);
+
+var d = document.createElement('A');
+d.setAttribute('href','indexhard.html');
+d.innerHTML = "hard Mode";
+a.appendChild(d);
+// d.appendChild(c)
+// d.appendChild(b);
+//
+// var f = document.createElement('input');
+// f.setAttribute('type','submit');
+// f.setAttribute('value','Start');
+// var g = document.createElement('form');
+// g.setAttribute('action', 'index1.html');
+// var h = document.createElement('p');
+// h.innerHTML = "Press This Button To Start The Easy Mode";
+// a.appendChild(g);
+// g.appendChild(h)
+// g.appendChild(f);
+    </script>
+  </body>
+</html>
